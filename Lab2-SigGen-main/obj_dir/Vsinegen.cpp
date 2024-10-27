@@ -14,8 +14,10 @@ Vsinegen::Vsinegen(VerilatedContext* _vcontextp__, const char* _vcname__)
     , clk{vlSymsp->TOP.clk}
     , rst{vlSymsp->TOP.rst}
     , en{vlSymsp->TOP.en}
+    , offset{vlSymsp->TOP.offset}
     , incr{vlSymsp->TOP.incr}
     , dout{vlSymsp->TOP.dout}
+    , dout2{vlSymsp->TOP.dout2}
     , rootp{&(vlSymsp->TOP)}
 {
     // Register model with the context
